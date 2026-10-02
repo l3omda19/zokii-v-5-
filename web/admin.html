@@ -1,1 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zokii Studio Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="brand">ZOKII STUDIO</div>
+    <a href="index.html">SITE</a>
+  </header>
 
+  <section class="card admin-card" id="login">
+    <h1>ADMIN</h1>
+    <p>Enter admin password.</p>
+    <input id="password" type="password" placeholder="Password" autocomplete="off">
+    <button id="loginBtn">LOGIN</button>
+    <div id="error" class="error"></div>
+  </section>
+
+  <section class="card hidden" id="panel">
+    <h1>ADMIN PANEL</h1>
+    <button id="generate">CREATE A CODE</button>
+    <div id="code" class="result hidden"></div>
+    <h2>Created Codes</h2>
+    <div id="list"></div>
+  </section>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>
